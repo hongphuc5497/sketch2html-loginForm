@@ -22,3 +22,116 @@ a, button {
 }
 
 /* Start */
+:root {
+  --red: #ee596f;
+  --yellow: #feb800;
+  --green: #07a787;
+  --purple: #c765d0;
+  --gray: #787878;
+  --gray-light: #eee;
+  --gray-dark: #2e3c54;
+  --font: "Montserrat", sans-serif;
+}
+
+.sign-up {
+  height: 60rem;
+  width: 100%;
+  max-width: 80rem;
+  position: relative;
+  margin: 2.5rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--gray-light);
+  font-family: var(--font);
+
+  overflow: hidden;
+}
+
+.sign-up__form {
+  height: 70%;
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: white;
+
+  overflow: hidden;
+  border-radius: .8rem;
+  box-shadow: 0 20px 20px 10px rgba(0,0,0,.15);
+}
+
+.sign-up__content {
+  padding: 4rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.sign-up__title {
+  margin-bottom: 3rem;
+
+  color: var(--gray-dark);
+
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sign-up__inp {
+  margin-bottom: 1.5rem;
+  padding: 2rem 2rem 2rem 0;
+
+  font-family: var(--font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.forgot__password {
+  display: inline-block;
+  margin-top: 2rem;
+
+  color: var(--gray);
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sign-up__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-up__buttons > * {
+  width: 50%;
+  padding: 2rem 1.5rem;
+
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  
+  border: 0;
+}
+
+.btn--register {
+  color: var(--gray);
+  background-color: var(--gray-light);
+}
+
+.btn--signin {
+  color: white;
+  background-color: var(--gray-dark);
+
+  text-align: right;
+}
